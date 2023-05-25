@@ -15,8 +15,6 @@ for(let i = 1; i <= m; i++) {
     if(minSingle > b) minSingle = b 
 }
 
-
-/*
 // 세트
 for(let i = 0; i < Math.floor(n / 6); i++) {
     result += minSet < minSingle * 6 ? minSet : minSingle * 6
@@ -26,17 +24,17 @@ for(let i = 0; i < Math.floor(n / 6); i++) {
 if (n % 6) {
     result += minSingle * (n % 6) > minSet ? minSet : minSingle * (n % 6) 
 }
-*/
 
-if(minSet > minSingle * 6) {
-    result += n * minSingle
-} else {
-    result += Math.floor(n/6) * minSet
 
-    if((n%6) * minSingle > minSet) {
-        result += minSet
-    } else {
-        result += (n%6) * minSingle
-    }
-}
+// if(minSet > minSingle * 6) {
+//     result += n * minSingle
+// } else {
+//     result += Math.floor(n/6) * minSet
+
+//     if((n%6) * minSingle > minSet) {
+//         result += minSet
+//     } else {
+//         result += (n%6) * minSingle
+//     }
+// }
 console.log(result)
