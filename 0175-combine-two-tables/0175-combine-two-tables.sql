@@ -1,5 +1,0 @@
-# Write your MySQL query statement below
-
-SELECT B.FIRSTNAME firstName, B.LASTNAME lastName, A.CITY city, A.STATE state
-FROM ADDRESS A
-RIGHT OUTER JOIN PERSON B ON A.PERSONID = B.PERSONID
