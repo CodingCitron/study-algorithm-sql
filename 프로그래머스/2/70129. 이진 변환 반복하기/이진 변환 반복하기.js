@@ -19,6 +19,6 @@ function solution(s) {
 }
 
 function calc(two) {
-    const zeroRemoved = two.replaceAll('0', '').length
+    const zeroRemoved = two.replaceAll('0', '').length /* 0 제거후 길이 */
     return [zeroRemoved.toString(2), two.length - zeroRemoved] /* 제거된 후 길이 2진 변환, 0 제거된 수 */
 }
